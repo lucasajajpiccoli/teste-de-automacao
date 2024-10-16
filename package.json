@@ -1,0 +1,28 @@
+{
+  "name": "teste-de-automacao",
+  "version": "1.0.0",
+  "description": "Teste de automação para o processo seletivo do PLARD - Santander",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:chrome": "cypress run --browser chrome",
+    "cy:chrome:visible": "cypress run --browser chrome --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasajajpiccoli/teste-de-automacao.git"
+  },
+  "author": "Lucas HCX",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "dependencies": {
+    "cosmiconfig": "^9.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "./cypress/e2e/**/"
+  }
+}
