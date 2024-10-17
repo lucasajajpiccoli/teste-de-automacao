@@ -1,13 +1,6 @@
-import { Given, Then, When, Before } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 
-const mapa_elemento_atributo = {
-  "Email Address": "login-email",
-  "Password": "login-password",
-  "Login": "login-button"
-}
-
-const email_campo = "Email Address";
-const senha_campo = "Password";
+import { mapa_elemento_atributo, email_campo, senha_campo } from "./comum";
 
 const mapa_portugues_ingles = {
   "Preencha este campo.": "Please fill out this field.",
@@ -19,31 +12,6 @@ const dados_incorretos = {
   invalido: "1a2b3c",
   valido: "a@b.c"
 }
-
-Given('que Lucas tem uma conta', function () {
-  this.conta = {};
-  this.login = {};
-  this.login.campos_vazios = [];
-  this.login.campos_invalidos = [];
-  this.login.campos_validos = [];
-  this.login.campos_corretos = [];
-});
-
-Given('o nome é {string}', function (nome) {
-  this.conta.nome = nome;
-});
-
-Given('o e-mail é {string}', function (email) {
-  this.conta.email = email;
-});
-
-Given('a senha é {string}', function (senha) {
-  this.conta.senha = senha;
-});
-
-Given('ele acessou à página de login {string}', function (url) {
-  cy.visit(url);
-});
 
 Given('ele deixou o campo {string} vazio', function (campo) {
   this.login.campos_vazios.push(campo);
@@ -86,22 +54,25 @@ Then("uma mensagem de {string} deve aparecer", function (mensagem) {
   const { campos_vazios, campos_invalidos, campos_validos, campos_corretos } = this.login;
 
   const ambos_vazios = campos_vazios.length === 2;
-
-  const somente_email_vazio = campos_vazios.length === 1 && campos_vazios[0] === email_campo;
-
-  const somente_senha_vazia = campos_vazios.length === 1 && campos_vazios[0] === senha_campo;
-  const somente_email_valido = campos_validos.length === 1 && campos_validos[0] === email_campo;
-  const email_valido_senha_vazia = somente_email_valido && somente_senha_vazia;
-
-  const somente_email_invalido = campos_invalidos.length === 1 && campos_invalidos[0] === email_campo;
-  const email_invalido_senha_vazia = somente_email_invalido && somente_senha_vazia;
-
   const ambos_invalidos = campos_invalidos.length === 2;
 
+  const somente_email_vazio = campos_vazios.length === 1 && campos_vazios[0] === email_campo;
+  const somente_senha_vazia = campos_vazios.length === 1 && campos_vazios[0] === senha_campo;
+
+  const somente_email_invalido = campos_invalidos.length === 1 && campos_invalidos[0] === email_campo;
+  const somente_senha_invalida = campos_invalidos.length === 1 && campos_invalidos[0] === senha_campo;
+
+  const somente_email_valido = campos_validos.length === 1 && campos_validos[0] === email_campo;
+
   const somente_email_correto = campos_corretos.length === 1 && campos_corretos[0] === email_campo;
+
+
+  const email_invalido_senha_vazia = somente_email_invalido && somente_senha_vazia;
+
+  const email_valido_senha_vazia = somente_email_valido && somente_senha_vazia;
+    
   const email_correto_senha_vazia = somente_email_correto && somente_senha_vazia;
 
-  const somente_senha_invalida = campos_invalidos.length === 1 && campos_invalidos[0] === senha_campo;
   const email_correto_senha_invalida = somente_email_correto && somente_senha_invalida;
 
   if (ambos_vazios || somente_email_vazio || email_invalido_senha_vazia || ambos_invalidos) {
@@ -115,10 +86,6 @@ Then("uma mensagem de {string} deve aparecer", function (mensagem) {
   } else if (email_correto_senha_invalida) {
       cy.get(`form[action="/login"] > p`, { timeout: 10000 }).should('exist');
   }
-});
-
-Then('deve ser redirecionado para {string}', function(url) {
-  cy.url().should('equal', url);
 });
 
 Then('deve ter no canto superior direito da página escrito {string}', function(informacao_login) {
