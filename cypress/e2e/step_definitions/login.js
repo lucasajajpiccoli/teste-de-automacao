@@ -13,27 +13,27 @@ const dados_incorretos = {
   valido: "a@b.c"
 }
 
-Given('ele deixou o campo {string} vazio', function (campo) {
+Given('ele deixou o campo de login {string} vazio', function (campo) {
   this.login.campos_vazios.push(campo);
   cy.get(`input[data-qa="${mapa_elemento_atributo[campo]}"]`).clear();
 });
 
-Given('ele deixou o campo {string} preenchido', function (campo) {
+Given('ele deixou o campo de login {string} preenchido', function (campo) {
   this.login.campos_invalidos.push(campo);
   cy.get(`input[data-qa="${mapa_elemento_atributo[campo]}"]`).type(dados_incorretos.invalido);
 });
 
-Given('ele deixou o campo {string} preenchido com um endereço de formato inválido, com valor {string}', function (campo, valor) {
+Given('ele deixou o campo de login {string} preenchido com um endereço de formato inválido, com valor {string}', function (campo, valor) {
   this.login.campos_invalidos.push(campo);
   cy.get(`input[data-qa="${mapa_elemento_atributo[campo]}"]`).type(valor);
 });
 
-Given('ele deixou o campo {string} preenchido com um endereço de formato válido', function (campo) {
+Given('ele deixou o campo de login {string} preenchido com um endereço de formato válido', function (campo) {
   this.login.campos_validos.push(campo);
   cy.get(`input[data-qa="${mapa_elemento_atributo[campo]}"]`).type(dados_incorretos.valido);
 });
 
-Given('ele deixou o campo {string} preenchido com {string}', function (campo, valor) {
+Given('ele deixou o campo de login {string} preenchido com {string}', function (campo, valor) {
   const email_correto = campo === email_campo && valor === this.conta.email;
   const senha_correta = campo === senha_campo && valor === this.conta.senha;
 

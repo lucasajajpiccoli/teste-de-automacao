@@ -9,8 +9,8 @@ Given('ele clicou no botão {string} do produto {string}', function(botao, produ
   cy.get('.features_items').find('.product-image-wrapper').contains(produto).parent().parent().parent().contains(botao).click();
 });
 
-Given('ele clicou no botão {string} da mensagem de sucesso de inclusão ao carrinho', function(mensagem) {
-  cy.get('.features_items').contains(mensagem).click();
+Given('ele clicou no botão {string} da mensagem de sucesso de inclusão ao carrinho', function(botao) {
+  cy.get('.features_items').contains(botao).click();
 });
 
 Given('ele deixou o campo {string} com {string}', function(campo, valor) {
@@ -21,7 +21,7 @@ When('ele clica no botão {string} do produto {string}', function(botao, produto
   cy.get('.features_items').find('.product-image-wrapper').contains(produto).parent().contains(botao).click();
 });
 
-When('ele clica no botão {string}', function(botao) {
+When('ele clica no botão {string} das informações do produto', function(botao) {
   cy.get('.product-information').contains(botao).click();
 })
 

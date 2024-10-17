@@ -28,7 +28,7 @@ Cenário: Inclusão ao carrinho de um segundo produto por meio da página de bus
 Cenário: Inclusão ao carrinho de quantidade específica de um produto por meio da página do produto
   E ele clicou no botão "View Product" do produto "Pure Cotton V-Neck T-Shirt"
   E ele deixou o campo "Quantity" com "2"
-  Quando ele clica no botão "Add to cart"
+  Quando ele clica no botão "Add to cart" das informações do produto
   Então uma mensagem "Your product has been added to cart." deve aparecer
 
 Cenário: Inclusão ao carrinho de quantidade específica de um segundo produto por meio da página do produto
@@ -36,5 +36,5 @@ Cenário: Inclusão ao carrinho de quantidade específica de um segundo produto 
   E ele clicou no botão "Continue Shopping" da mensagem de sucesso de inclusão ao carrinho
   E ele clicou no botão "View Product" do produto "Pure Cotton Neon Green Tshirt"
   E ele deixou o campo "Quantity" com "2"
-  Quando ele clica no botão "Add to cart"
+  Quando ele clica no botão "Add to cart" das informações do produto
   Então uma mensagem "Your product has been added to cart." deve aparecer

@@ -7,6 +7,7 @@ Given('que Lucas tem uma conta', function () {
   this.login.campos_invalidos = [];
   this.login.campos_validos = [];
   this.login.campos_corretos = [];
+  this.produtos = [];
 });
 
 Given('o nome é {string}', function (nome) {
@@ -33,6 +34,10 @@ Given('ele efetuou o login na página com as credenciais corretas', function() {
 
 Given('ele acessou à página {string}', function(url) {
   cy.visit(url);
+});
+
+Given('ele clicou na opção {string} no menu superior', function(opcao) {
+  cy.get('.navbar-nav').contains(opcao).click();
 });
 
 When('ele clica na opção {string} no menu superior', function(opcao) {
