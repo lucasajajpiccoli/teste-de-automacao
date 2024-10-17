@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-17T07:51:37.478Z",
+    "end": "2024-10-17T07:52:37.899Z",
+    "duration": 60421,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f81338e6-b243-4fc3-ba36-cf11d152a0a5",
+      "title": "",
+      "fullFile": "cypress/e2e/features/validacao.feature",
+      "file": "cypress/e2e/features/validacao.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "687c95f3-1b4c-405f-97b1-d52a48ef2915",
+          "title": "Validação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Sem inclusão de produto ao carrinho",
+              "fullTitle": "Validação Sem inclusão de produto ao carrinho",
+              "timedOut": null,
+              "duration": 8379,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7137d935-b2e9-4b7f-9a79-2126800aa4ff",
+              "parentUUID": "687c95f3-1b4c-405f-97b1-d52a48ef2915",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inclusão ao carrinho de um produto por meio da página de busca de produtos",
+              "fullTitle": "Validação Inclusão ao carrinho de um produto por meio da página de busca de produtos",
+              "timedOut": null,
+              "duration": 13083,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "ea6ece69-c5e7-4d7d-b852-569c5bfbd8e0",
+              "parentUUID": "687c95f3-1b4c-405f-97b1-d52a48ef2915",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inclusão ao carrinho de mais de um produto por meio da página de busca de produtos",
+              "fullTitle": "Validação Inclusão ao carrinho de mais de um produto por meio da página de busca de produtos",
+              "timedOut": null,
+              "duration": 9806,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e61ed833-a5e3-4cba-bde2-f6a91eaf867d",
+              "parentUUID": "687c95f3-1b4c-405f-97b1-d52a48ef2915",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inclusão ao carrinho de quantidade específica de um produto por meio da página do produto",
+              "fullTitle": "Validação Inclusão ao carrinho de quantidade específica de um produto por meio da página do produto",
+              "timedOut": null,
+              "duration": 11376,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2dec6bd2-faee-4798-918f-4a866b34dd5a",
+              "parentUUID": "687c95f3-1b4c-405f-97b1-d52a48ef2915",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inclusão ao carrinho de quantidade específica de um segundo produto por meio da página do produto",
+              "fullTitle": "Validação Inclusão ao carrinho de quantidade específica de um segundo produto por meio da página do produto",
+              "timedOut": null,
+              "duration": 15595,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "ec288be2-c2b5-4b0f-ba17-d6b00cea9f38",
+              "parentUUID": "687c95f3-1b4c-405f-97b1-d52a48ef2915",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7137d935-b2e9-4b7f-9a79-2126800aa4ff",
+            "ea6ece69-c5e7-4d7d-b852-569c5bfbd8e0",
+            "e61ed833-a5e3-4cba-bde2-f6a91eaf867d",
+            "2dec6bd2-faee-4798-918f-4a866b34dd5a",
+            "ec288be2-c2b5-4b0f-ba17-d6b00cea9f38"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 58239,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-17T07:49:57.914Z",
+    "end": "2024-10-17T07:50:42.309Z",
+    "duration": 44395,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d83dafc-6917-49cb-8e03-e7fd94f0c6b5",
+      "title": "",
+      "fullFile": "cypress/e2e/features/busca.feature",
+      "file": "cypress/e2e/features/busca.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84368463-7deb-40d5-b6db-88a944b63bc3",
+          "title": "Busca",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso à página de produtos, onde se encontra a ferramenta de busca",
+              "fullTitle": "Busca Acesso à página de produtos, onde se encontra a ferramenta de busca",
+              "timedOut": null,
+              "duration": 9174,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "d57c2a47-7ec2-43e2-ae1a-4da2b6104b0d",
+              "parentUUID": "84368463-7deb-40d5-b6db-88a944b63bc3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Busca com campo vazio",
+              "fullTitle": "Busca Busca com campo vazio",
+              "timedOut": null,
+              "duration": 8704,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "969afe52-b6de-4056-9f8e-4c55f9dd9dcb",
+              "parentUUID": "84368463-7deb-40d5-b6db-88a944b63bc3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Busca por palavra que nenhum produto contém em seu nome ou palavras chaves",
+              "fullTitle": "Busca Busca por palavra que nenhum produto contém em seu nome ou palavras chaves",
+              "timedOut": null,
+              "duration": 7165,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7a897503-c8a3-4b35-adef-3e6d8eb72470",
+              "parentUUID": "84368463-7deb-40d5-b6db-88a944b63bc3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Busca por palavra que apenas um produto contém em seu nome ou palavras chaves",
+              "fullTitle": "Busca Busca por palavra que apenas um produto contém em seu nome ou palavras chaves",
+              "timedOut": null,
+              "duration": 8180,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "d1f53652-c12a-4083-88a1-409b83b3fd20",
+              "parentUUID": "84368463-7deb-40d5-b6db-88a944b63bc3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Busca por palavra que mais de um produto contêm em seu nome ou palavras chaves",
+              "fullTitle": "Busca Busca por palavra que mais de um produto contêm em seu nome ou palavras chaves",
+              "timedOut": null,
+              "duration": 8698,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "79843b26-884d-46b4-9f38-5405ceb66373",
+              "parentUUID": "84368463-7deb-40d5-b6db-88a944b63bc3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d57c2a47-7ec2-43e2-ae1a-4da2b6104b0d",
+            "969afe52-b6de-4056-9f8e-4c55f9dd9dcb",
+            "7a897503-c8a3-4b35-adef-3e6d8eb72470",
+            "d1f53652-c12a-4083-88a1-409b83b3fd20",
+            "79843b26-884d-46b4-9f38-5405ceb66373"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 41921,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
