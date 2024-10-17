@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:chrome": "cypress run --browser chrome",
-    "cy:chrome:visible": "cypress run --browser chrome --headed"
+    "cy:chrome:visible": "cypress run --browser chrome --headed --not-exit"
   },
   "repository": {
     "type": "git",
